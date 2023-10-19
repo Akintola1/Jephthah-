@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>coolstarz | reggae</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        .row::after {
+            content: "";
+            display: block;
+            clear: both;
+
+
+        }
+        [class*="col-"] {
+            width: 100%;
+
+        }
+@media only screen and (min-width: 480px) {
+            .col-md-1 {
+                width: 8.33333333%
+            }
+            .col-md-2 {
+                width: 16.66666667%
+            }
+            .col-md-3 {
+                width: 25%
+            }
+            .col-md-4 {
+                width: 33.33333333%
+            }
+            .col-md-5 {
+                width: 41.66666667%
+            }
+            .col-md-6 {
+                width: 50%
+            }
+            .col-md-7 {
+                width: 58.33333333%
+            }
+            .col-md-8 {
+                width: 66.66666667%
+            }
+            .col-md-9 {
+                width: 75%
+            }
+            .col-md-10 {
+                width: 83.33333333%
+            }
+            .col-md-11 {
+                width: 91.66666667%
+            }
+            .col-md-12 {
+                width: 100%
+            }
+        }
+@media only screen and (min-width: 768px) {
+            .col-l-1 {
+                width: 8.33333333%
+            }
+            .col-l-2 {
+                width: 16.66666667%
+            }
+            .col-l-3 {
+                width: 25%
+            }
+            .col-l-4 {
+                width: 33.33333333%
+            }
+            .col-l-5 {
+                width: 41.66666667%
+            }
+            .col-l-6 {
+                width: 50%
+            }
+            .col-l-7 {
+                width: 58.33333333%
+            }
+            .col-l-8 {
+                width: 66.66666667%
+            }
+            .col-l-9 {
+                width: 75%
+            }
+            .col-l-10 {
+                width: 83.33333333%
+            }
+            .col-l-11 {
+                width: 91.66666667%
+            }
+            .col-l-12 {
+                width: 100%
+            }
+        }
+        /* design the layout */
+        header, footer {
+            padding: 15px;
+            color: yellow;
+            font-family: fantasy;
+        }
+        .main.aside {
+            padding: 15px;
+        }
+        .main > p {
+            text-align: justify;
+        }
+        .aside > div {
+            background: #89C3D0;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+
+        header {
+            background-image: url(images/10113.jpg);
+            padding: 40px;
+        }
+        footer {
+            background: #333333;
+        }
+        .menu {
+            padding: 10px;
+        }
+        .menu > ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        .menu > ul > li {
+            background: #903C56;
+            width: 100%;
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 120%;
+            transition-duration: 1s;
+        }
+        .menu > ul > li:hover {
+            background: gold;
+        }
+        .menu > ul > li > a {
+            text-decoration: none;
+            /* remove underline */
+            color: white;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        h2 {
+            margin-left: 50px;
+            color: purple;
+            font-family: cursive;
+            font-size: 30px;
+        }
+        b:hover {
+            font-size: 25px;
+            color: red;
+            font-family: courier;
+            transition-duration: 3s;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+        input {
+            border: solid 3px grey;
+            border-radius: 40px;
+            width: 300px;
+            height: 35px;
+            color: red;
+            background: transparent;
+        }
+        button {
+            border-radius: 100px;
+            height: 40px;
+            width: 59px;
+            background: transparent;
+            margin-right: 88px;
+
+        }
+        a {
+            color: green;
+            font-family: casual;
+        }
+        footer {
+            padding: 130px;
+        }
+        #more {
+            margin-left: -120px;
+            margin-bottom: 90px;
+            margin-top: -100px;
+        }
+        strong {
+            color: yellow;
+        }
+        #terms {
+            margin-top: -70px;
+            margin-left: -130px;
+        }
+        #privacy {
+            margin-top: -20px;
+            margin-left: 60px
+        }
+        #aa {
+            width: 250px;
+        }
+        #contact {
+            margin-top: -80px;
+            margin-left: 140px;
+        }
+        #info {
+            margin-left: -120px;
+            margin-top: 75px;
+        }
+        #playstore {
+            margin-left: -100px;
+            width: 120px;
+        }
+        #apple {
+            margin-left: -100px;
+            width: 120px;
+        }
+        #facebook {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            margin-left: 1px;
+        }
+        #whatsapp {
+            width: 43px;
+            height: 45px;
+            margin-left: -55px;
+            margin-top: -50px;
+        }
+        #twitter {
+            width: 60px;
+            margin-right: -15px;
+            margin-left: 70px;
+            margin-top: -45px;
+        }
+        #gmail {
+            width: 55px;
+            margin-left: 150px;
+            margin-top: -45px;
+        }
+       
+        
+        #afro {
+            font-family: fantasy;
+            color: gold;
+            outline-style: groove;
+        }
+ #last {
+   margin-bottom:-130px;
+    </style>
+</head>
+<body>
+    <header>
+
+        <h1>COOLSTARZ.com</h1>
+
+    </header>
+    <hr>
+    <hr>
+    <h2>home of entertainment</h2>
+    <hr><hr>
+    <br>
+    <br>
+   
+        <a href="musics.html"><img src="icon/back.png" alt="back"></a>
+    <br><br><br><br>
+    <form>
+
+        <input type="search" placeholder="search your favourites here" required>
+        <button type="submit"><img src="icon/search.png" alt="search"></button>
+
+    </form>
+    <div class="row">
+        <div class="col-md-3 col-l-3 menu">
+            
+                <div id="afro">
+                  <h1>
+                    REGGAE MUSIC
+                  </h1>
+                </div>
+          
+        </div>
+    </div>
+    <div class="col-md-9 col-l-6 main">
+    </div>
+    <div class="col-md-12 col-l-3 aside">
+   
+  
+    </div>
+    <a href="#">back to top</a>
+
+    <footer>
+        <div id="more">
+            MORE INFO
+        </div>
+        <br>
+        <div id="terms">
+            <a href="termsandconditions.html">
+                <strong>Terms and Condition</strong></a>
+        </div>
+        <div id="privacy">
+            <a href="privacypolicy.html"><strong>Privacy Policy</strong></a>
+        </div>
+        <br>
+        <div id="about">
+            <a href="about.html"><strong>About Us</strong></a>
+        </div>
+        <div id="contact">
+            <a href="contact.html"><strong>Contact Us</strong></a>
+        </div>
+        <br>
+        <div id="info">
+            <hr>
+            MORE INFO
+        </div>
+        <br>
+        <div id="playstore">
+            <a href="https://www.play.google.com"><img src="images/google.jpg" alt="get"></a>
+        </div>
+        <div id="apple">
+            <a href="https://www.apple.com"><img src="images/apple.jpg" alt="apple"></a>
+            <br>
+        </div>
+        <p>
+            <div>
+                <div id="facebook">
+                    <a href="https://facebook.com"><img src="icon/facebook.jpg" alt="facebook"></a>
+                </div>
+              <div id="whatsapp">
+                    <a href="https://whatsapp.com/2349039320695"><img src="icon/whatsapp.jpg" alt="whatsapp"></a>
+                </div>
+                <div id="twitter">
+                    <a href="https://twitter.com"><img src="icon/twitter.jpg" alt="twitter"></a>
+                </div>
+                <div id="gmail">
+                    <a href="mailto:jephthahjew@gmail.com"><img src="icon/gmail.jpg" alt="gmail"></a>
+                </div>
+            </div>
+            <div id="last">
+                &copy;coolstarz.com
+            </div>
+        </footer>
+</body>
+
+</html>
